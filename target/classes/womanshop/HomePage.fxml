@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="mainVBox" xmlns:fx="http://javafx.com/fxml" fx:controller="womanshop.HomePageController" spacing="10" alignment="CENTER">
+    <Text text="Bienvenue à Woman Shop" style="-fx-font-size: 24;" />
+    <Button fx:id="sellerButton" text="Se connecter en tant que Vendeur" onAction="#handleSellerButtonClick" />
+    <Button fx:id="customerButton" text="Se connecter en tant que Client" onAction="#handleCustomerButtonClick" />
+    <ToggleButton fx:id="discountButton" onAction="#toggleDiscount" text="Activer Réduction"/>
+    <ListView fx:id="productListView" prefWidth="300" prefHeight="400" />
+</VBox>
+
+
+
